@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Super Mario Bros. 1-1 — Fan Remake</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="wrap">
+    <canvas id="game" width="256" height="240"></canvas>
+    <p id="hint">Arrows: move &nbsp;·&nbsp; Z / Space: jump &nbsp;·&nbsp; X / Shift: run &amp; fire &nbsp;·&nbsp; Enter: start / pause &nbsp;·&nbsp; M: mute</p>
+  </div>
+  <!-- Plain script tags (no ES modules) so the game also runs from file:// -->
+  <script src="js/sprites.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/levels.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>

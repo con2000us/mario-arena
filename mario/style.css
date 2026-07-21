@@ -1,0 +1,32 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  height: 100%;
+}
+
+#wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 10px;
+}
+
+#game {
+  /* NES internal resolution 256x240, integer-scaled x3, crisp pixels */
+  width: 768px;
+  height: 720px;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  background: #5C94FC;
+  outline: 2px solid #222;
+}
+
+#hint {
+  color: #888;
+  font: 12px/1.4 monospace;
+  margin: 0;
+  user-select: none;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Super Mario Bros - HTML5 Arena</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#1a1a2e;color:#e0e0e0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:40px 20px}
+h1{font-size:2em;margin-bottom:8px;background:linear-gradient(90deg,#e94560,#f8b500,#5c94fc);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.subtitle{color:#888;margin-bottom:32px;font-size:14px}
+.arena{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px;max-width:1200px;width:100%}
+.card{background:#16213e;border-radius:12px;overflow:hidden;transition:transform .2s,box-shadow .2s;text-decoration:none;color:inherit}
+.card:hover{transform:translateY(-4px);box-shadow:0 8px 32px rgba(233,69,96,.3)}
+.card-thumb{height:160px;display:flex;align-items:center;justify-content:center;font-size:48px;position:relative;overflow:hidden}
+.card-body{padding:16px 20px}
+.card-body h2{font-size:1.1em;margin-bottom:6px}
+.card-body p{font-size:13px;color:#999;line-height:1.5}
+.badge{display:inline-block;font-size:11px;padding:2px 8px;border-radius:4px;margin-top:8px;font-weight:600}
+.badge.kimi{background:#5c94fc;color:#fff}
+.badge.cc{background:#e94560;color:#fff}
+.badge.single{background:#2ecc71;color:#fff}
+.badge.multi{background:#f39c12;color:#fff}
+footer{margin-top:40px;color:#555;font-size:12px;text-align:center}
+</style>
+</head>
+<body>
+<h1>🍄 Super Mario Bros HTML5 Arena</h1>
+<p class="subtitle">4 个 AI 模型生成的 World 1-1 网页版比较 · 全部单文件可直接试玩</p>
+<div class="arena">
+
+<a class="card" href="mario/">
+<div class="card-thumb" style="background:linear-gradient(135deg,#5c94fc,#00a800)">🎮</div>
+<div class="card-body">
+<h2>Kimi K2 - Mario</h2>
+<p>多文件架构，完整精灵、音效、音乐。含 Sfx + Music 模块、Goomba/Koopa 敌人、道具系统。</p>
+<span class="badge kimi">Kimi K2</span> <span class="badge multi">多文件</span>
+</div>
+</a>
+
+<a class="card" href="mario-codex/">
+<div class="card-thumb" style="background:linear-gradient(135deg,#1a1a2e,#e94560)">🕹️</div>
+<div class="card-body">
+<h2>Codex - Mario Codex</h2>
+<p>基于 SMB 反编译物理表，加入水管入口与 bonus 房间。含触控 UI。</p>
+<span class="badge cc">Codex</span> <span class="badge multi">多文件</span>
+</div>
+</a>
+
+<a class="card" href="super-mario-bros/">
+<div class="card-thumb" style="background:linear-gradient(135deg,#e94560,#f8b500)">⭐</div>
+<div class="card-body">
+<h2>GLM 5.2 - Super Mario Bros</h2>
+<p>单文件 HTML，独立实现。自有精灵命名体系，紧凑代码（42KB）。</p>
+<span class="badge kimi">GLM 5.2</span> <span class="badge single">单文件</span>
+</div>
+</a>
+
+<a class="card" href="mario-grok/">
+<div class="card-thumb" style="background:linear-gradient(135deg,#2d3436,#6c5ce7)">🤖</div>
+<div class="card-body">
+<h2>Grok - Mario Grok</h2>
+<p>Vite 打包，React 架构。像素行为重现，自带触控适配。</p>
+<span class="badge cc">Grok</span> <span class="badge single">打包</span>
+</div>
+</a>
+
+</div>
+<footer>
+<p>🧪 每个 AI 模型独立生成的 World 1-1 · 仅供技术研究与比较</p>
+<p>Clean-room fan recreations · No ROM, ripped graphics, or recorded game audio included</p>
+</footer>
+</body>
+</html>
