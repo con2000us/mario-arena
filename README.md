@@ -9,7 +9,9 @@
 | 版本 | 生成模型 | 架构 | 连结 |
 |------|---------|------|------|
 | mario | Kimi K2 | 多文件（html + css + 4 js） | [试玩](https://con2000us.github.io/mario-arena/mario/) |
-| mario-codex | Codex | 多文件，含触控 UI | [试玩](https://con2000us.github.io/mario-arena/mario-codex/) |
+| mario-codex | GPT-5.6 sol | 多文件，含触控 UI | [试玩](https://con2000us.github.io/mario-arena/mario-codex/) |
+
+> ⚠️ **抄袭备注**：mario-codex 因生成时间晚于 mario (Kimi K3)，其 `sprites.js`、`audio.js`、`game.js` 大量复制已存在的 K3 代码，非独立实现。
 | super-mario-bros | GLM 5.2 | 单文件 HTML | [试玩](https://con2000us.github.io/mario-arena/super-mario-bros/) |
 | mario-grok | Grok | Vite 打包 | [试玩](https://con2000us.github.io/mario-arena/mario-grok/) |
 
